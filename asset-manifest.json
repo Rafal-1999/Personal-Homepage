@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/Personal-Homepage/static/css/main.b161a3f9.css",
+    "main.js": "/Personal-Homepage/static/js/main.d44f13c6.js",
+    "static/js/453.61d4ab14.chunk.js": "/Personal-Homepage/static/js/453.61d4ab14.chunk.js",
+    "static/media/Inter-SemiBold.svg": "/Personal-Homepage/static/media/Inter-SemiBold.2f8e7e158386eb025ac8.svg",
+    "static/media/Inter-Bold.svg": "/Personal-Homepage/static/media/Inter-Bold.058508d6fd17494ed2a5.svg",
+    "static/media/Inter-Regular.svg": "/Personal-Homepage/static/media/Inter-Regular.6aa12424a46d1c195a59.svg",
+    "static/media/Inter-Black.svg": "/Personal-Homepage/static/media/Inter-Black.76cbbb1163beb26730e1.svg",
+    "static/media/Inter-Black.eot": "/Personal-Homepage/static/media/Inter-Black.d9da1792ed617514779b.eot",
+    "static/media/Inter-Black.ttf": "/Personal-Homepage/static/media/Inter-Black.01b1156ff21acb318feb.ttf",
+    "static/media/Inter-Bold.eot": "/Personal-Homepage/static/media/Inter-Bold.18fc7ad7f7338cccb067.eot",
+    "static/media/Inter-Bold.ttf": "/Personal-Homepage/static/media/Inter-Bold.7db3ec663535ab302111.ttf",
+    "static/media/Inter-SemiBold.eot": "/Personal-Homepage/static/media/Inter-SemiBold.81eea219c54a61f58191.eot",
+    "static/media/Inter-SemiBold.ttf": "/Personal-Homepage/static/media/Inter-SemiBold.c59ec6f6fa374947c9cb.ttf",
+    "static/media/Inter-Regular.eot": "/Personal-Homepage/static/media/Inter-Regular.d09e9c6a2ea8ad717eb2.eot",
+    "static/media/Inter-Regular.ttf": "/Personal-Homepage/static/media/Inter-Regular.f531a3ca57a72100071e.ttf",
+    "static/media/Inter-Bold.woff": "/Personal-Homepage/static/media/Inter-Bold.608c6517b6b9a538cdfc.woff",
+    "static/media/Inter-SemiBold.woff": "/Personal-Homepage/static/media/Inter-SemiBold.32d2b120ef93cc3476b5.woff",
+    "static/media/Inter-Black.woff": "/Personal-Homepage/static/media/Inter-Black.289925fb7b552da3bde3.woff",
+    "static/media/Inter-Regular.woff": "/Personal-Homepage/static/media/Inter-Regular.14eb94309ed41d1cb84a.woff",
+    "static/media/profile.png": "/Personal-Homepage/static/media/profile.f010c2c1fb5cc2df2ef9.png",
+    "static/media/Inter-Bold.woff2": "/Personal-Homepage/static/media/Inter-Bold.ef4f1fa4544b2a5eaf2c.woff2",
+    "static/media/Inter-SemiBold.woff2": "/Personal-Homepage/static/media/Inter-SemiBold.3752195ecfc6873de6cf.woff2",
+    "static/media/Inter-Black.woff2": "/Personal-Homepage/static/media/Inter-Black.041a00d0a88b478bfa04.woff2",
+    "static/media/Inter-Regular.woff2": "/Personal-Homepage/static/media/Inter-Regular.ab945c53cca7263f39f9.woff2",
+    "index.html": "/Personal-Homepage/index.html",
+    "main.b161a3f9.css.map": "/Personal-Homepage/static/css/main.b161a3f9.css.map",
+    "main.d44f13c6.js.map": "/Personal-Homepage/static/js/main.d44f13c6.js.map",
+    "453.61d4ab14.chunk.js.map": "/Personal-Homepage/static/js/453.61d4ab14.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b161a3f9.css",
+    "static/js/main.d44f13c6.js"
+  ]
+}
