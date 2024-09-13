@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { device } from "../../styles/breakpoints";
 
-export const ListBlock = styled.div`
+export const ListBlock = styled.section`
     margin: 48px 0;
     padding: 16px;
     background: #FFF;
@@ -50,7 +50,7 @@ export const List = styled.ul`
     gap: 8px;
 
     @media ${device.sm} {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(292px, 1fr));
     }
 `;
 
