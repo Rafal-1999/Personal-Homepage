@@ -4,10 +4,11 @@ import {
     BoxItemTwo,
     Image,
     BoxItemThree,
+    MainTitle,
     Text,
     Mail
 } from "./styled";
-import { SubTitle, HeaderOne } from "../../styles/headers";
+import { SubTitle } from "../../styles/headers";
 import profileImage from "../../assets/images/profile.png";
 
 const BusinessCard = ({ extraContent }) => (
@@ -27,7 +28,7 @@ const BusinessCard = ({ extraContent }) => (
         )}
         <BoxItemThree>
             <SubTitle>This is</SubTitle>
-            <HeaderOne>Rafał Chudy</HeaderOne>
+            <MainTitle>Rafał Chudy</MainTitle>
             <Text>
                 🙂💻 I am a passionate Frontend Developer in love with React, currently looking for new job opportunities.
             </Text>

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { HeaderTwo } from "../../styles/headers";
 import { device } from "../../styles/breakpoints";
 
 export const ListBlock = styled.section`
@@ -17,17 +18,14 @@ export const ListBlock = styled.section`
     }
 `;
 
-export const ListTitle = styled.h2`
+export const ListTitle = styled(HeaderTwo)`
     margin: 0 0 12px 0;
     padding-bottom: 12px;
     border-bottom: 1px solid #D1D5DA4D;
-    font-size: 18px;
-    font-weight: 900;
 
     @media ${device.sm} {
         margin-bottom: 32px;
         padding-bottom: 15px;
-        font-size: 30px;
     }
 `;
 

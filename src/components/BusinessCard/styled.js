@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { HeaderOne } from "../../styles/headers";
 import { device } from "../../styles/breakpoints";
 
 export const Box = styled.div`
@@ -52,6 +53,19 @@ export const Image = styled.img`
     height: auto;
     background: #8C8D7E;
     border-radius: 50%;
+`;
+
+export const MainTitle = styled(HeaderOne)`
+    margin: 8px 0 16px;
+    text-transform: capitalize;
+
+    @media ${device.sm} {
+        margin: 12px 0 20px;
+    }
+
+    @media ${device.md} {
+        margin: 12px 0 35px;
+    }
 `;
 
 export const Text = styled.p`
