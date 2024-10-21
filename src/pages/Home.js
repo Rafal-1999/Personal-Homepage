@@ -1,6 +1,7 @@
 import Container from "../components/Container";
 import BusinessCard from "../components/BusinessCard";
 import Skills from "../components/Skills";
+import Projects from "../features/projects/Projects";
 import { skills } from "../data/skills";
 import { education } from "../data/education";
 import toolsIcon from "../assets/icons/decorative/tools.png";
@@ -22,6 +23,7 @@ const Home = () => (
                 decorativeIcon={rocketIcon}
                 arrayItems={education}
             />
+            <Projects />
         </main>
     </Container>
 );
