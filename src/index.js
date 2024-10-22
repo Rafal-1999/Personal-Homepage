@@ -4,6 +4,7 @@ import reportWebVitals from './reportWebVitals';
 import App from "./App";
 import { GlobalStyles } from "./styles/global";
 import "./assets/css/fonts.css";
+import "./assets/icons/icomoon/css/icomoon.css";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
