@@ -6,7 +6,8 @@ import {
     BoxItemThree,
     MainTitle,
     Text,
-    Mail
+    Mail,
+    Icon
 } from "./styled";
 import { SubTitle } from "../../styles/headers";
 import profileImage from "../../assets/images/profile.png";
@@ -18,7 +19,7 @@ const BusinessCard = ({ extraContent }) => (
                 width="384"
                 height="384"
                 src={profileImage}
-                alt=""
+                alt="Rafał Chudy - programista Frontend Deweloper"
             />
         </BoxItemOne>
         {extraContent && (
@@ -32,7 +33,10 @@ const BusinessCard = ({ extraContent }) => (
             <Text>
                 🙂💻 I am a passionate Frontend Developer in love with React, currently looking for new job opportunities.
             </Text>
-            <Mail href="#">Hire Me</Mail>
+            <Mail href="mailto:rafalchu5@gmail.com">
+                <Icon className="icon-message" aria-hidden="true" />
+                Hire Me
+            </Mail>
         </BoxItemThree>
     </Box>
 );

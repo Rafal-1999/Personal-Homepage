@@ -89,6 +89,9 @@ export const Mail = styled.a`
     display: inline-block;
     border: 1px solid #D1D5DA4D;
     border-radius: 4px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
     text-decoration: none;
     transition: all 0.3s linear;
 
@@ -105,7 +108,22 @@ export const Mail = styled.a`
         box-shadow: 0px 2px 0px 0px #14462033 inset;
     }
 
+    @media ${device.sm} {
+        font-size: 20px;
+    }
+
     @media ${device.lg} {
         margin-top: 32px;
+    }
+`;
+
+export const Icon = styled.i`
+    margin-right: 14px;
+    font-size: 14px;
+    vertical-align: middle;
+
+    @media ${device.sm} {
+        margin-right: 18px;
+        font-size: 17px;
     }
 `;
