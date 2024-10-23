@@ -1,4 +1,10 @@
 import { useFetchData } from "../../hooks/useFetchData";
+import {
+    Header,
+    HeaderIcon,
+    HeaderTitle,
+    HeaderDescription
+} from "./styled";
 import { githubAPIBaseURL, githubUsername } from "../../constants";
 
 const Projects = () => {
@@ -6,7 +12,13 @@ const Projects = () => {
     const projects = useFetchData(dataURL);
 
     return (
-        <section></section>
+        <section>
+            <Header>
+                <HeaderIcon className="icon-github" aria-hidden="true" />
+                <HeaderTitle>Portfolio</HeaderTitle>
+                <HeaderDescription>My recent projects</HeaderDescription>
+            </Header>
+        </section>
     )
 };
 
