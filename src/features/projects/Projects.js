@@ -1,4 +1,5 @@
 import { useFetchData } from "../../hooks/useFetchData";
+import Loader from "./Loader";
 import ProjectList from "./ProjectList";
 import {
     Header,
@@ -14,6 +15,8 @@ const Projects = () => {
 
     const showContentAfterFetch = () => {
         switch (projects.status) {
+            case "loading":
+                return <Loader />;
             case "data":
                 return <ProjectList projectsData={projects.data} />;
         }
