@@ -1,5 +1,6 @@
 import { useFetchData } from "../../hooks/useFetchData";
 import Loader from "./Loader";
+import ErrorInfo from "./ErrorInfo";
 import ProjectList from "./ProjectList";
 import {
     Header,
@@ -17,6 +18,8 @@ const Projects = () => {
         switch (projects.status) {
             case "loading":
                 return <Loader />;
+            case "error":
+                return <ErrorInfo />;
             case "data":
                 return <ProjectList projectsData={projects.data} />;
         }
