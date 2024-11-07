@@ -4,6 +4,8 @@ import {
     ErrorTitle,
     ErrorText
 } from "./styled";
+import { FilledLink } from "../../../styles/links";
+import { githubUsername } from "../../../constants";
 
 const ErrorInfo = () => (
     <ErrorInfoBox >
@@ -12,6 +14,14 @@ const ErrorInfo = () => (
         <ErrorText>
             Sorry, failed to load GitHub projects. You can check them directly on GitHub.
         </ErrorText>
+        <FilledLink
+            href={`https://github.com/${githubUsername}`}
+            target="_blank"
+            title="Otwórz stronę GitHub w nowym oknie"
+            rel="noopener noreferrer"
+        >
+            Go to GitHub
+        </FilledLink>
     </ErrorInfoBox>
 );
 

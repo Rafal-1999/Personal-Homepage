@@ -38,7 +38,7 @@ export const ErrorTitle = styled.span`
 
 export const ErrorText = styled.p`
     max-width: 430px;
-    margin: 16px 0;
+    margin: 16px 0 0;
     color: #252525;
     font-size: 16px;
     line-height: 1.4;
@@ -46,7 +46,7 @@ export const ErrorText = styled.p`
     text-align: center;
 
     @media ${device.sm} {
-        margin: 32px 0;
+        margin: 32px 0 0;
         font-size: 20px;
         letter-spacing: 1px;
     }

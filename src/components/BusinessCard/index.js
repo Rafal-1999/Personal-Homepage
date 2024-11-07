@@ -6,10 +6,10 @@ import {
     BoxItemThree,
     MainTitle,
     Text,
-    Mail,
     Icon
 } from "./styled";
 import { SubTitle } from "../../styles/headers";
+import { FilledLink } from "../../styles/links";
 import profileImage from "../../assets/images/profile.png";
 
 const BusinessCard = ({ extraContent }) => (
@@ -33,10 +33,10 @@ const BusinessCard = ({ extraContent }) => (
             <Text>
                 🙂💻 I am a passionate Frontend Developer in love with React, currently looking for new job opportunities.
             </Text>
-            <Mail href="mailto:rafalchu5@gmail.com">
+            <FilledLink href="mailto:rafalchu5@gmail.com">
                 <Icon className="icon-message" aria-hidden="true" />
                 Hire Me
-            </Mail>
+            </FilledLink>
         </BoxItemThree>
     </Box>
 );
