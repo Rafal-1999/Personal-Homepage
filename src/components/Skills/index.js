@@ -14,7 +14,11 @@ const Skills = ({
     <ListBlock>
         <ListTitle>
             {title}
-            <Icon src={decorativeIcon} alt="" />
+            <Icon
+                src={decorativeIcon}
+                alt=""
+                aria-hidden="true"
+            />
         </ListTitle>
         <List>
             {arrayItems.map(item =>

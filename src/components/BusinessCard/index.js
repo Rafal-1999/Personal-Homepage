@@ -11,6 +11,7 @@ import {
 import { SubTitle } from "../../styles/headers";
 import { FilledLink } from "../../styles/links";
 import profileImage from "../../assets/images/profile.png";
+import { email } from "../../constants";
 
 const BusinessCard = ({ extraContent }) => (
     <Box>
@@ -33,7 +34,11 @@ const BusinessCard = ({ extraContent }) => (
             <Text>
                 🙂💻 I am a passionate Frontend Developer in love with React, currently looking for new job opportunities.
             </Text>
-            <FilledLink href="mailto:rafalchu5@gmail.com">
+            <FilledLink
+                href={`mailto:${email}`}
+                title={`Wyślij wiadomość na adres e-mail ${email}`}
+                aria-label={`Wyślij wiadomość na adres email ${email}`}
+            >
                 <Icon className="icon-message" aria-hidden="true" />
                 Hire Me
             </FilledLink>
