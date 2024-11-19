@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { device } from "../../../styles/breakpoints";
 
 export const Projects = styled.div`
-    margin-top: 24px;
+    margin: 24px 0 48px;
     display: grid;
     grid-template-columns: 1fr;
     gap: 16px;
@@ -10,6 +10,10 @@ export const Projects = styled.div`
     @media ${device.md} {
         grid-template-columns: repeat(2, 1fr);
         gap: 32px;
+    }
+
+    @media ${device.lg} {
+        margin: 24px 0 120px;
     }
 `;
 
