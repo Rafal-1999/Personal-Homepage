@@ -37,3 +37,15 @@ export const FilledLink = styled.a`
         margin-top: 32px;
     }
 `;
+
+export const VisuallyHidden = styled.span`
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    position: absolute;
+    overflow: hidden;
+    white-space: nowrap;
+    clip: rect(0, 0, 0, 0);
+`;
