@@ -2,6 +2,7 @@ import Container from "../components/Container";
 import BusinessCard from "../components/BusinessCard";
 import Skills from "../components/Skills";
 import Projects from "../features/projects/Projects";
+import Footer from "../components/Footer";
 import { skills } from "../data/skills";
 import { education } from "../data/education";
 import toolsIcon from "../assets/icons/decorative/tools.png";
@@ -25,6 +26,9 @@ const Home = () => (
             />
             <Projects />
         </main>
+        <footer>
+            <Footer />
+        </footer>
     </Container>
 );
 
