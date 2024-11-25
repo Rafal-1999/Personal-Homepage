@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
+import { Normalize } from "styled-normalize";
 import App from "./App";
 import { GlobalStyles } from "./styles/global";
 import "./assets/css/fonts.css";
@@ -9,6 +10,7 @@ import "./assets/icons/icomoon/css/icomoon.css";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
+        <Normalize />
         <GlobalStyles />
         <App />
     </React.StrictMode>
