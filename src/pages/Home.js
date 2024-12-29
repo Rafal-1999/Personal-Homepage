@@ -1,5 +1,6 @@
 import Container from "../components/Container";
 import BusinessCard from "../components/BusinessCard";
+import ThemeToggle from "../features/themeToggle/ThemeToggle";
 import Skills from "../components/Skills";
 import Projects from "../features/projects/Projects";
 import Footer from "../components/Footer";
@@ -11,7 +12,9 @@ import rocketIcon from "../assets/icons/decorative/rocket.png";
 const Home = () => (
     <Container>
         <header>
-            <BusinessCard />
+            <BusinessCard
+                extraContent={<ThemeToggle />}
+            />
         </header>
         <main>
             <Skills
