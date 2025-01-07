@@ -62,6 +62,7 @@ export const SocialMedia = styled.ul`
 
 export const SocialMediaLink = styled.a`
     color: ${({ theme }) => theme.socialLink.color};
+    border-radius: 50%;
     display: flex;
     font-size: 32px;
     text-decoration: none;
