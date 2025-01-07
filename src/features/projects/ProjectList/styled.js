@@ -19,15 +19,18 @@ export const Projects = styled.div`
 
 export const ProjectsItem = styled.div`
     padding: 18px;
-    background: #FFF;
-    border: 6px solid #D1D5DA4D;
-    border-radius: 4px;
-    box-shadow: 0px 16px 58px 0px #090A3308, 0px -2px 50px 0px #090A3305;
-    transition: all 0.3s linear;
+    background: ${({ theme }) => theme.projects.itemBackground};
+    border: 6px solid ${({ theme }) => theme.projects.itemBorder};
+    border-radius: ${({ theme }) => theme.borderRadius};
+    box-shadow: 
+        0px 16px 58px 0px ${({ theme }) => theme.projects.itemShadow2}, 
+        0px -2px 50px 0px ${({ theme }) => theme.projects.itemShadow1};
+    transition: all ${({ theme }) => theme.transitionDuration} linear;
 
     &:hover,
     &:focus-within {
-        border-color: #0366D633;
+        border-color: ${({ theme }) => theme.projects.hoverItemBorder};
+        transition-duration: 0.5s;
     }
 
     @media ${device.lg} {
@@ -37,9 +40,10 @@ export const ProjectsItem = styled.div`
 
 export const ProjectTitle = styled.h3`
     margin: 0;
-    color: #0366D6;
+    color: ${({ theme }) => theme.projects.titleColor};
     font-size: 16px;
     font-weight: 700;
+    transition: all ${({ theme }) => theme.transitionDuration} linear;
 
     @media ${device.sm} {
         font-size: 24px;
@@ -48,9 +52,10 @@ export const ProjectTitle = styled.h3`
 
 export const ProjectDescription = styled.p`
     margin: 16px 0 0;
-    color: #6E7E91;
+    color: ${({ theme }) => theme.projects.textColor2};
     font-size: 14px;
     font-weight: 400;
+    transition: all ${({ theme }) => theme.transitionDuration} linear;
 
     @media ${device.sm} {
         margin-top: 24px;
@@ -70,9 +75,10 @@ export const Links = styled.dl`
 `;
 
 export const LinkTitle = styled.strong`
-    color: #6E7E91;
+    color: ${({ theme }) => theme.projects.textColor2};
     font-size: 14px;
     font-weight: 400;
+    transition: all ${({ theme }) => theme.transitionDuration} linear;
 
     @media ${device.sm} {
         font-size: 18px;
@@ -84,17 +90,17 @@ export const LinksItem = styled.dd`
 `;
 
 export const Link = styled.a`
-    color: #0366D6;
-    border-bottom: 1px solid #0366D633;
+    color: ${({ theme }) => theme.projects.linkColor};
+    border-bottom: 1px solid ${({ theme }) => theme.projects.linkDecorationColor};
     font-size: 14px;
     font-weight: 400;
     text-decoration: none;
-    transition: all 0.3s linear;
+    transition: all ${({ theme }) => theme.transitionDuration} linear;
     word-break: break-all;
 
     &:hover,
     &:focus {
-        border-color: #0366D6CC;
+        border-color: ${({ theme }) => theme.projects.hoverLinkDecorationColor};
     }
 
     @media ${device.sm} {

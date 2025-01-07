@@ -9,8 +9,9 @@ export const Header = styled.header`
 `;
 
 export const HeaderIcon = styled.i`
-    color: #0366D6;
+    color: ${({ theme }) => theme.projects.iconColor};
     font-size: 32px;
+    transition: all ${({ theme }) => theme.transitionDuration} linear;
 
     @media ${device.sm} {
         font-size: 40px;
@@ -28,9 +29,10 @@ export const HeaderTitle = styled(HeaderTwo)`
 
 export const HeaderDescription = styled.p`
     margin: 16px 0 0;
-    color: #252525;
+    color: ${({ theme }) => theme.projects.textColor1};
     text-align: center;
     letter-spacing: 0.8px;
+    transition: all ${({ theme }) => theme.transitionDuration} linear;
 
     @media ${device.sm} {
         margin-top: 8px;

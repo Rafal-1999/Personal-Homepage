@@ -11,17 +11,17 @@ export const FooterBox = styled.div`
 
 export const ContactLink = styled.a`
     margin: 12px 0;
-    color: #252525;
+    color: ${({ theme }) => theme.unfilledLink.color};
     display: inline-block;
     font-size: 18px;
     font-weight: 900;
     text-decoration: none;
-    transition: all 0.3s linear;
+    transition: all ${({ theme }) => theme.transitionDuration} linear;
     word-break: break-all;
 
     &:hover,
     &:focus {
-        color: #0366D6;
+        color: ${({ theme }) => theme.unfilledLink.hoverColor};
     }
 
     @media ${device.sm} {
@@ -34,10 +34,11 @@ export const Text = styled.p`
     width: 100%;
     max-width: 670px;
     margin: 0;
-    color: #252525;
+    color: ${({ theme }) => theme.footer.textColor};
     font-size: 14px;
     line-height: 1.2;
     letter-spacing: 0.7px;
+    transition: all ${({ theme }) => theme.transitionDuration} linear;
 
     @media ${device.sm} {
         font-size: 18px;
@@ -60,15 +61,15 @@ export const SocialMedia = styled.ul`
 `;
 
 export const SocialMediaLink = styled.a`
-    color: #252525;
+    color: ${({ theme }) => theme.socialLink.color};
     display: flex;
     font-size: 32px;
     text-decoration: none;
-    transition: all 0.3s linear;
+    transition: all ${({ theme }) => theme.transitionDuration} linear;
 
     &:hover,
     &:focus {
-        color: #0366D6;
+        color: ${({ theme }) => theme.socialLink.hoverColor};
     }
 
     @media ${device.sm} {
@@ -78,10 +79,11 @@ export const SocialMediaLink = styled.a`
 
 export const Copyright = styled.span`
     margin-top: 12px;
-    color: #252525;
+    color: ${({ theme }) => theme.footer.textColor};
     display: inline-block;
     font-size: 14px;
     letter-spacing: 0.7px;
+    transition: all ${({ theme }) => theme.transitionDuration} linear;
 
     @media ${device.sm} {
         margin-top: 24px;

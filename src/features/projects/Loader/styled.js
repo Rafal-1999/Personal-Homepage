@@ -14,11 +14,12 @@ export const LoaderBox = styled.div`
 
 export const LoaderInfo = styled.p`
     margin: 0 0 24px;
-    color: #252525;
+    color: ${({ theme }) => theme.projects.textColor1};
     font-size: 16px;
     line-height: 1.4;
     letter-spacing: 0.8px;
     text-align: center;
+    transition: all ${({ theme }) => theme.transitionDuration} linear;
 
     @media ${device.sm} {
         font-size: 20px;
@@ -42,13 +43,14 @@ const loaderAnimation = keyframes`
 export const StyledLoader = styled.div`
     width: 80px;
     height: 80px;
-    border: 10px solid #D1D5DA4D;
-    border-top-color: #0366D6;
+    border: 10px solid ${({ theme }) => theme.projects.loaderBackground2};
+    border-top-color: ${({ theme }) => theme.projects.loaderBackground1};
     border-radius: 50%;
     animation-name: ${loaderAnimation};
     animation-duration: 1.5s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+    transition: all ${({ theme }) => theme.transitionDuration} linear;
 
     @media ${device.lg} {
         width: 160px;

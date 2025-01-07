@@ -2,30 +2,30 @@ import styled from "styled-components";
 import { device } from "./breakpoints";
 
 export const FilledLink = styled.a`
-    color: #FFF;
-    background: #0366D6;
+    color: ${({ theme }) => theme.filledLink.color};
+    background: ${({ theme }) => theme.filledLink.background};
     margin-top: 24px;
     padding: 12px 16px;
     display: inline-block;
-    border: 1px solid #D1D5DA4D;
-    border-radius: 4px;
+    border: 1px solid ${({ theme }) => theme.filledLink.border};
+    border-radius: ${({ theme }) => theme.borderRadius};
     font-size: 18px;
     font-weight: 600;
     letter-spacing: 0.9px;
     text-decoration: none;
-    transition: all 0.3s linear;
+    transition: all ${({ theme }) => theme.transitionDuration} linear;
 
     &:hover,
     &:focus {
         box-shadow: 
-            -2px -2px 0px 0px #8CC2FF,
-            2px 2px 0px 0px #8CC2FF,
-            -2px 2px 0px 0px #8CC2FF,
-            2px -2px 0px 0px #8CC2FF;
+            -2px -2px 0px 0px ${({ theme }) => theme.filledLink.shadow}, 
+            2px 2px 0px 0px ${({ theme }) => theme.filledLink.shadow}, 
+            -2px 2px 0px 0px ${({ theme }) => theme.filledLink.shadow}, 
+            2px -2px 0px 0px ${({ theme }) => theme.filledLink.shadow};
     }
 
     &:active {
-        box-shadow: 0px 2px 0px 0px #14462033 inset;
+        box-shadow: 0px 2px 0px 0px ${({ theme }) => theme.filledLink.activeShadow} inset;
     }
 
     @media ${device.sm} {

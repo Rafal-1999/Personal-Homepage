@@ -13,7 +13,8 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     body {
-        background: #FBFBFE;
+        background: ${({ theme }) => theme.body.background};
         font-family: "Inter", sans-serif;
+        transition: background ${({ theme }) => theme.transitionDuration} linear;
     }
 `;

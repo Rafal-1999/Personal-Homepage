@@ -69,12 +69,13 @@ export const MainTitle = styled(HeaderOne)`
 `;
 
 export const Text = styled.p`
-    color: #6E7E91;
+    color: ${({ theme }) => theme.body.color};
     width: 100%;
     max-width: 635px;
     margin: 0;
     font-size: 17px;
     font-weight: 400;
+    transition: all ${({ theme }) => theme.transitionDuration} linear;
 
     @media ${device.sm} {
         font-size: 20px;

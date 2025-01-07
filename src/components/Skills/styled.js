@@ -5,9 +5,12 @@ import { device } from "../../styles/breakpoints";
 export const ListBlock = styled.section`
     margin: 48px 0;
     padding: 16px;
-    background: #FFF;
-    border-radius: 4px;
-    box-shadow: 0px 16px 58px 0px #090A3308, 0px -2px 50px 0px #090A3305;
+    background: ${({ theme }) => theme.skills.background1};
+    border-radius: ${({ theme }) => theme.borderRadius};
+    box-shadow: 
+        0px 16px 58px 0px ${({ theme }) => theme.skills.shadow2}, 
+        0px -2px 50px 0px ${({ theme }) => theme.skills.shadow1};
+    transition: all ${({ theme }) => theme.transitionDuration} linear;
 
     @media ${device.sm} {
         padding: 32px;
@@ -21,7 +24,7 @@ export const ListBlock = styled.section`
 export const ListTitle = styled(HeaderTwo)`
     margin: 0 0 12px 0;
     padding-bottom: 12px;
-    border-bottom: 1px solid #D1D5DA4D;
+    border-bottom: 1px solid ${({ theme }) => theme.skills.border};
 
     @media ${device.sm} {
         margin-bottom: 32px;
@@ -54,22 +57,24 @@ export const List = styled.ul`
 
 export const ListItem = styled.li`
     padding-left: 14px;
-    color: #6E7E91;
+    color: ${({ theme }) => theme.skills.color};
     font-size: 14px;
     font-weight: 400;
     position: relative;
+    transition: all ${({ theme }) => theme.transitionDuration} linear;
 
     &::before {
         content: "";
         width: 6px;
         height: 6px;
         margin: auto 0;
-        background: #0366D6;
+        background: ${({ theme }) => theme.skills.background2};
         border-radius: 50%;
         position: absolute;
         top: 0;
         bottom: 0;
         left: 0;
+        transition: all ${({ theme }) => theme.transitionDuration} linear;
     }
 
     @media ${device.sm} {
