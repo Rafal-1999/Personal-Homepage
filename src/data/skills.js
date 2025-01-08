@@ -25,5 +25,10 @@ export const skills = [
     "SCSS",
     "Figma",
     "SVG",
-    "Bootstrap"
+    "Bootstrap",
+    "W3C Validator, PageSpeed Insights",
+    "Online tools",
+    "Clean code",
+    "3D printing",
+    "Microsoft Windows"
 ];

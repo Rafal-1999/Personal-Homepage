@@ -1,22 +1,22 @@
 export const socialMedia = [
     {
         name: "GitHub",
-        icon: "ikonka_1",
+        icon: "icon-github",
         link: "https://github.com/Rafal-1999"
     },
     {
         name: "Facebook",
-        icon: "ikonka_2",
-        link: "https://www.facebook.com"
+        icon: "icon-facebook",
+        link: ""
     },
     {
         name: "Linkedin",
-        icon: "ikonka_3",
-        link: "https://pl.linkedin.com"
+        icon: "icon-linkedin",
+        link: ""
     },
     {
         name: "Instagram",
-        icon: "ikonka_4",
-        link: "https://www.instagram.com"
+        icon: "icon-instagram",
+        link: ""
     }
 ];

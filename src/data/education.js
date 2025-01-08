@@ -4,5 +4,6 @@ export const education = [
     "Cypress",
     "Unit testing",
     "TypeScript",
-    "JS classes"
+    "JS classes",
+    "English"
 ];
