@@ -24,14 +24,6 @@ export const HeaderTwo = styled.h2`
     }
 `;
 
-export const HeaderThree = styled.h3`
-    font-size: 15px;
-
-    @media ${device.sm} {
-        font-size: 18px;
-    }
-`;
-
 export const SubTitle = styled.span`
     color: ${({ theme }) => theme.body.color};
     font-size: 16px;
