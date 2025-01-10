@@ -33,11 +33,13 @@ export const ListTitle = styled(HeaderTwo)`
 `;
 
 export const Icon = styled.img`
-    height: 21px;
     margin-left: 12px;
+    vertical-align: bottom;
+    transition: all ${({ theme }) => theme.transitionDuration} linear;
 
     @media ${device.sm} {
-        height: 25px;
+        width: 32px;
+        height: 32px;
         margin-left: 16px;
     }
 `;

@@ -16,6 +16,8 @@ const Skills = ({
             {title}
             <Icon
                 src={decorativeIcon}
+                width="25"
+                height="25"
                 alt=""
                 aria-hidden="true"
             />
