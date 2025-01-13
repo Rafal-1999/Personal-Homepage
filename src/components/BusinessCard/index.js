@@ -10,18 +10,22 @@ import {
 } from "./styled";
 import { SubTitle } from "../../styles/headers";
 import { FilledLink } from "../../styles/links";
-import profileImage from "../../assets/images/profile.png";
+import profilePng from "../../assets/images/profile.png";
+import profileWebp from "../../assets/images/profile.webp";
 import { email } from "../../constants";
 
 const BusinessCard = ({ extraContent }) => (
     <Box>
         <BoxItemOne>
-            <Image
-                width="384"
-                height="384"
-                src={profileImage}
-                alt="Rafał Chudy - programista Frontend Deweloper"
-            />
+            <picture>
+                <source srcSet={profileWebp} type="image/webp" />
+                <Image
+                    width="384"
+                    height="384"
+                    src={profilePng}
+                    alt="Rafał Chudy - programista Frontend Deweloper"
+                />
+            </picture>
         </BoxItemOne>
         {extraContent && (
             <BoxItemTwo>
