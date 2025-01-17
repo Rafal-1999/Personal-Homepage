@@ -44,6 +44,7 @@ export const ProjectTitle = styled.h3`
     font-size: 16px;
     font-weight: 700;
     transition: all ${({ theme }) => theme.transitionDuration} linear;
+    word-break: break-all;
 
     @media ${device.sm} {
         font-size: 24px;
