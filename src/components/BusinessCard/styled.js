@@ -83,9 +83,15 @@ export const Text = styled.p`
 `;
 
 export const Icon = styled.i`
-    margin-right: 14px;
-    font-size: 14px;
-    vertical-align: middle;
+    display: none;
+
+    @media ${device.xs} {
+        margin-right: 14px;
+        display: inline-block;
+        font-size: 14px;
+        vertical-align: middle;
+        transition: all ${({ theme }) => theme.transitionDuration} linear;
+    }
 
     @media ${device.sm} {
         margin-right: 18px;

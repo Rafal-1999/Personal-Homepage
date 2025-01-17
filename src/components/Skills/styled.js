@@ -33,9 +33,14 @@ export const ListTitle = styled(HeaderTwo)`
 `;
 
 export const Icon = styled.img`
-    margin-left: 12px;
-    vertical-align: bottom;
-    transition: all ${({ theme }) => theme.transitionDuration} linear;
+    display: none;
+
+    @media ${device.xs} {
+        margin-left: 12px;
+        display: inline-block;
+        vertical-align: bottom;
+        transition: all ${({ theme }) => theme.transitionDuration} linear;
+    }
 
     @media ${device.sm} {
         width: 32px;
