@@ -3,7 +3,7 @@ import { HeaderOne } from "../../styles/headers";
 import { device } from "../../styles/breakpoints";
 
 export const Box = styled.div`
-    margin-top: 20px;
+    padding-top: 20px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -29,7 +29,7 @@ export const Box = styled.div`
     }
 
     @media ${device.lg} {
-        margin-top: 120px;
+        padding-top: 120px;
         gap: 38px 72px;
     }
 `;

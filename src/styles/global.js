@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
     *,
@@ -13,8 +13,11 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     body {
-        background: ${({ theme }) => theme.body.background};
         font-family: "Inter", sans-serif;
-        transition: background ${({ theme }) => theme.transitionDuration} linear;
     }
+`;
+
+export const ThemeBox = styled.div`
+    background: ${({ theme }) => theme.body.background};
+    transition: background ${({ theme }) => theme.transitionDuration} linear;
 `;

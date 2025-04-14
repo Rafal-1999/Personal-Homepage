@@ -2,10 +2,10 @@ import styled from "styled-components";
 import { device } from "../../styles/breakpoints";
 
 export const FooterBox = styled.div`
-    margin-bottom: 30px;
+    padding-bottom: 30px;
 
     @media ${device.lg} {
-        margin-bottom: 55px;
+        padding-bottom: 55px;
     }
 `;
 

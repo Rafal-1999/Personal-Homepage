@@ -1,8 +1,7 @@
 import {
     createContext,
     useContext,
-    useState,
-    useEffect
+    useState
 } from "react";
 import { ThemeProvider } from "styled-components";
 import { light, dark } from "./themes";
@@ -12,12 +11,10 @@ const ThemeContextCreate = createContext();
 export const useTheme = () => useContext(ThemeContextCreate);
 
 export const ThemeContext = ({ children }) => {
-    const [theme, setTheme] = useState("light");
-
-    useEffect(() => {
+    const [theme, setTheme] = useState(() => {
         const localTheme = localStorage.getItem("theme");
-        localTheme ? setTheme(localTheme) : setThemeMode("light");
-    }, []);
+        return localTheme || "light";
+    });
 
     const setThemeMode = themeMode => {
         localStorage.setItem("theme", themeMode);
