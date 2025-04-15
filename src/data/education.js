@@ -5,5 +5,7 @@ export const education = [
     "Unit testing",
     "TypeScript",
     "JS classes",
+    "Redux-Saga",
+    "Zustand",
     "English"
 ];
