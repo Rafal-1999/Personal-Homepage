@@ -1,6 +1,21 @@
-# Getting Started with Create React App
+# Personal Homepage
+
+**Demo:**
+https://rafal-1999.github.io/Personal-Homepage/
+
+## Description:
+The website is designed to look nice and work well even on very small screens. It stays clear and functional at a minimum width of 160 pixels. Using responsive techniques (like CSS Flexbox, Grid, and Media Queries), the content automatically adjusts to fit the screen size.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Technologies:
+* HTML5
+* CSS3
+* JS (fetch, local storage)
+* styled-components
+* RWD
+* Icomoon
+* WCAG
 
 ## Available Scripts
 
